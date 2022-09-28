@@ -59,7 +59,8 @@
   border-radius: 5px;
   background-color: #fff;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 #user-card {
@@ -68,10 +69,11 @@
   flex-direction: column;
   border: 2px rgba(0, 0, 0, 0) solid;
   border-radius: 15px;
-  width: 30%;
   margin: 0 auto;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+  width: 70%;
+  min-width: 150px;
 }
 #avatar {
   margin: 0 auto;
@@ -84,13 +86,12 @@
   padding: 0.5rem 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   #user-card {
-    width: 70%;
-    min-width: 150px;
+    width: 30%;
   }
   .output-cointainer #output {
-    flex-wrap: nowrap;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
