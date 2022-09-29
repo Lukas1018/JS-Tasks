@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -26,4 +26,34 @@
 .container h1 {
   margin-top: 50px;
   color: #333;
+}
+
+#brand-card {
+  text-align: center;
+  background-color: rgb(212, 211, 211);
+}
+
+li {
+  padding: 0.2rem;
+  list-style: none;
+}
+li:hover {
+  background-color: aquamarine;
+}
+
+@media screen and (min-width: 768px) {
+  #output {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    gap: 1rem;
+  }
+  #brand-card {
+    width: 23.25%;
+    height: 77vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }
